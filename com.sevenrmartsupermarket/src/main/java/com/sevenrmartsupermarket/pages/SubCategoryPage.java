@@ -68,10 +68,7 @@ public class SubCategoryPage {
 		newSubCategory.click();
 		
 	}
-//	public void selectCategory() {
-//		
-//	 pageUtility.selectByIndex(selectCategoryElement,7);
-//	}
+
 	public void enterSubcategory(String subcategory) {
 		enterSubCategoryElement.sendKeys(subcategory);
 	}
