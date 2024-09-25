@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T08:33:15 IST" name="ParallelExecution" finished-at="2024-09-23T08:34:20 IST" duration-ms="64554">
+    <groups>
+    </groups>
+    <test started-at="2024-09-23T08:33:15 IST" name="HomeFunctionality" finished-at="2024-09-23T08:33:28 IST" duration-ms="12416">
+      <class name="com.sevenrmartsupermarket.tests.HomeTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:15 IST" name="launchBrowser" finished-at="2024-09-23T08:33:22 IST" duration-ms="6581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyColorManageGift()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:22 IST" name="verifyColorManageGift" finished-at="2024-09-23T08:33:23 IST" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyColorManageGift -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:23 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:23 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyColorManageGift status=SUCCESS method=HomeTest.verifyColorManageGift()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:23 IST" name="launchBrowser" finished-at="2024-09-23T08:33:26 IST" duration-ms="3189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyProfilePicture()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:26 IST" name="verifyProfilePicture" finished-at="2024-09-23T08:33:28 IST" duration-ms="1271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfilePicture -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d]" started-at="2024-09-23T08:33:28 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProfilePicture status=SUCCESS method=HomeTest.verifyProfilePicture()[pri:0, instance:com.sevenrmartsupermarket.tests.HomeTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+      </class> <!-- com.sevenrmartsupermarket.tests.HomeTest -->
+    </test> <!-- HomeFunctionality -->
+    <test started-at="2024-09-23T08:33:15 IST" name="SubCategoryFunctions" finished-at="2024-09-23T08:34:04 IST" duration-ms="48636">
+      <class name="com.sevenrmartsupermarket.tests.SubCategoryTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:15 IST" name="launchBrowser" finished-at="2024-09-23T08:33:22 IST" duration-ms="6269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAllSubCategorynames()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:22 IST" name="verifyAllSubCategorynames" finished-at="2024-09-23T08:33:24 IST" duration-ms="2540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllSubCategorynames -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:24 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:24 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllSubCategorynames status=SUCCESS method=SubCategoryTest.verifyAllSubCategorynames()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:24 IST" name="launchBrowser" finished-at="2024-09-23T08:33:28 IST" duration-ms="3437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryAddition()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:28 IST" name="verifyNewCategoryAddition" finished-at="2024-09-23T08:33:29 IST" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryAddition -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:29 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryAddition status=SUCCESS method=SubCategoryTest.verifyNewCategoryAddition()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:29 IST" name="launchBrowser" finished-at="2024-09-23T08:33:31 IST" duration-ms="2416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewSubCategory()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:31 IST" name="verifyNewSubCategory" finished-at="2024-09-23T08:33:56 IST" duration-ms="24728" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc773f041f806ad9d81935a257804032, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59890/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc773f041f806ad9d81935a257804032]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc773f041f806ad9d81935a257804032, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59890/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc773f041f806ad9d81935a257804032
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at com.sevenrmartsupermarket.pages.SubCategoryPage.getAlertMessage(SubCategoryPage.java:98)
+at com.sevenrmartsupermarket.tests.SubCategoryTest.verifyNewSubCategory(SubCategoryTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSubCategory -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:56 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:56 IST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSubCategory status=FAILURE method=SubCategoryTest.verifyNewSubCategory()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:33:56 IST" name="launchBrowser" finished-at="2024-09-23T08:34:02 IST" duration-ms="5141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySubCategoryHeader()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:34:02 IST" name="verifySubCategoryHeader" finished-at="2024-09-23T08:34:04 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubCategoryHeader -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748]" started-at="2024-09-23T08:34:04 IST" name="FailurescreenShot" finished-at="2024-09-23T08:34:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubCategoryHeader status=SUCCESS method=SubCategoryTest.verifySubCategoryHeader()[pri:0, instance:com.sevenrmartsupermarket.tests.SubCategoryTest@3571b748] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+      </class> <!-- com.sevenrmartsupermarket.tests.SubCategoryTest -->
+    </test> <!-- SubCategoryFunctions -->
+    <test started-at="2024-09-23T08:33:15 IST" name="loginDetails" finished-at="2024-09-23T08:34:20 IST" duration-ms="64554">
+      <class name="com.sevenrmartsupermarket.tests.LoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:15 IST" name="launchBrowser" finished-at="2024-09-23T08:33:21 IST" duration-ms="6066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:21 IST" name="verifyLogin" finished-at="2024-09-23T08:33:43 IST" duration-ms="21460" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf022096918dadb71d4f5fbc1693da69, findElement {using=xpath, value=//input[@type='text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59798/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf022096918dadb71d4f5fbc1693da69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf022096918dadb71d4f5fbc1693da69, findElement {using=xpath, value=//input[@type='text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59798/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf022096918dadb71d4f5fbc1693da69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at com.sevenrmartsupermarket.pages.LoginPage.enterUserName(LoginPage.java:44)
+at com.sevenrmartsupermarket.pages.LoginPage.login(LoginPage.java:70)
+at com.sevenrmartsupermarket.tests.LoginTest.verifyLogin(LoginTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:43 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:43 IST" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=FAILURE method=LoginTest.verifyLogin()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:44 IST" name="launchBrowser" finished-at="2024-09-23T08:33:58 IST" duration-ms="13248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:58 IST" name="verifyLoginDataProvider" data-provider="loginDetails" finished-at="2024-09-23T08:33:59 IST" duration-ms="1868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDataProvider -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:59 IST" name="launchBrowser" finished-at="2024-09-23T08:34:08 IST" duration-ms="8077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:33:59 IST" name="FailurescreenShot" finished-at="2024-09-23T08:33:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method signature="verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:08 IST" name="verifyLoginDataProvider" data-provider="loginDetails" finished-at="2024-09-23T08:34:09 IST" duration-ms="1272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Athira]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[athiravj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDataProvider -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:09 IST" name="FailurescreenShot" finished-at="2024-09-23T08:34:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:09 IST" name="launchBrowser" finished-at="2024-09-23T08:34:13 IST" duration-ms="4222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:13 IST" name="verifyLoginDataProvider" data-provider="loginDetails" finished-at="2024-09-23T08:34:14 IST" duration-ms="871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhiram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abhiram@11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDataProvider -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:14 IST" name="FailurescreenShot" finished-at="2024-09-23T08:34:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:14 IST" name="launchBrowser" finished-at="2024-09-23T08:34:18 IST" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:18 IST" name="verifyLoginDataProvider" data-provider="loginDetails" finished-at="2024-09-23T08:34:20 IST" duration-ms="1515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TESTNG12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDataProvider -->
+        <test-method is-config="true" signature="FailurescreenShot(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c]" started-at="2024-09-23T08:34:20 IST" name="FailurescreenShot" finished-at="2024-09-23T08:34:20 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.sevenrmartsupermarket.tests.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailurescreenShot -->
+      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
+    </test> <!-- loginDetails -->
+  </suite> <!-- ParallelExecution -->
+</testng-results>

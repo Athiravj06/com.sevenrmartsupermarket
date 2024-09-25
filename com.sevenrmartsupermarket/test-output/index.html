@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ParallelExecution" class="navigator-link">
+              <span class="suite-name border-failed">ParallelExecution</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ParallelExecution" class="navigator-link ">
+                    <span>D:\Testing\selenium\com.sevenrmartsupermarket\src\main\resources\xml_files\parallel.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ParallelExecution" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ParallelExecution" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ParallelExecution" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ParallelExecution" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ParallelExecution" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ParallelExecution" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ParallelExecution" class="hide-methods failed suite-ParallelExecution"> (hide)</a> <!-- hide-methods failed suite-ParallelExecution -->
+                      <a href="#" panel-name="suite-ParallelExecution" class="show-methods failed suite-ParallelExecution"> (show)</a> <!-- show-methods failed suite-ParallelExecution -->
+                    </span>
+                    <div class="method-list-content failed suite-ParallelExecution">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLogin">verifyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.SubCategoryTest" class="method navigator-link" hash-for-method="verifyNewSubCategory">verifyNewSubCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParallelExecution -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ParallelExecution" class="hide-methods passed suite-ParallelExecution"> (hide)</a> <!-- hide-methods passed suite-ParallelExecution -->
+                      <a href="#" panel-name="suite-ParallelExecution" class="show-methods passed suite-ParallelExecution"> (show)</a> <!-- show-methods passed suite-ParallelExecution -->
+                    </span>
+                    <div class="method-list-content passed suite-ParallelExecution">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.SubCategoryTest" class="method navigator-link" hash-for-method="verifyAllSubCategorynames">verifyAllSubCategorynames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.HomeTest" class="method navigator-link" hash-for-method="verifyColorManageGift">verifyColorManageGift</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginDataProvider(TESTNG12, abcd)">verifyLoginDataProvider(TESTNG12, abcd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginDataProvider(Athira, athiravj)">verifyLoginDataProvider(Athira, athiravj)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginDataProvider(admin, admin)">verifyLoginDataProvider(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginDataProvider(Abhiram, Abhiram@11)">verifyLoginDataProvider(Abhiram, Abhiram@11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.SubCategoryTest" class="method navigator-link" hash-for-method="verifyNewCategoryAddition">verifyNewCategoryAddition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.HomeTest" class="method navigator-link" hash-for-method="verifyProfilePicture">verifyProfilePicture</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelExecution" title="com.sevenrmartsupermarket.tests.SubCategoryTest" class="method navigator-link" hash-for-method="verifySubCategoryHeader">verifySubCategoryHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ParallelExecution -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ParallelExecution" class="panel ParallelExecution">
+          <div class="suite-ParallelExecution-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin">
+                  </a> <!-- verifyLogin -->
+                  <span class="method-name">verifyLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;text&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf022096918dadb71d4f5fbc1693da69, findElement {using=xpath, value=//input[@type=&apos;text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59798/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf022096918dadb71d4f5fbc1693da69
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.sevenrmartsupermarket.pages.LoginPage.enterUserName(LoginPage.java:44)
+	at com.sevenrmartsupermarket.pages.LoginPage.login(LoginPage.java:70)
+	at com.sevenrmartsupermarket.tests.LoginTest.verifyLogin(LoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelExecution-class-failed -->
+          <div class="suite-ParallelExecution-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewSubCategory">
+                  </a> <!-- verifyNewSubCategory -->
+                  <span class="method-name">verifyNewSubCategory</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc773f041f806ad9d81935a257804032, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59890}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59890/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc773f041f806ad9d81935a257804032
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at com.sevenrmartsupermarket.pages.SubCategoryPage.getAlertMessage(SubCategoryPage.java:98)
+	at com.sevenrmartsupermarket.tests.SubCategoryTest.verifyNewSubCategory(SubCategoryTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelExecution-class-failed -->
+          <div class="suite-ParallelExecution-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginDataProvider(TESTNG12, abcd)">
+                  </a> <!-- verifyLoginDataProvider(TESTNG12, abcd) -->
+                  <span class="method-name">verifyLoginDataProvider</span>
+                  <span class="parameters">(TESTNG12,abcd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginDataProvider(Athira, athiravj)">
+                  </a> <!-- verifyLoginDataProvider(Athira, athiravj) -->
+                  <span class="method-name">verifyLoginDataProvider</span>
+                  <span class="parameters">(Athira,athiravj)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginDataProvider(admin, admin)">
+                  </a> <!-- verifyLoginDataProvider(admin, admin) -->
+                  <span class="method-name">verifyLoginDataProvider</span>
+                  <span class="parameters">(admin,admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginDataProvider(Abhiram, Abhiram@11)">
+                  </a> <!-- verifyLoginDataProvider(Abhiram, Abhiram@11) -->
+                  <span class="method-name">verifyLoginDataProvider</span>
+                  <span class="parameters">(Abhiram,Abhiram@11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelExecution-class-passed -->
+          <div class="suite-ParallelExecution-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllSubCategorynames">
+                  </a> <!-- verifyAllSubCategorynames -->
+                  <span class="method-name">verifyAllSubCategorynames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCategoryAddition">
+                  </a> <!-- verifyNewCategoryAddition -->
+                  <span class="method-name">verifyNewCategoryAddition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubCategoryHeader">
+                  </a> <!-- verifySubCategoryHeader -->
+                  <span class="method-name">verifySubCategoryHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelExecution-class-passed -->
+          <div class="suite-ParallelExecution-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyColorManageGift">
+                  </a> <!-- verifyColorManageGift -->
+                  <span class="method-name">verifyColorManageGift</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProfilePicture">
+                  </a> <!-- verifyProfilePicture -->
+                  <span class="method-name">verifyProfilePicture</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelExecution-class-passed -->
+        </div> <!-- panel ParallelExecution -->
+        <div panel-name="test-xml-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Testing\selenium\com.sevenrmartsupermarket\src\main\resources\xml_files\parallel.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;ParallelExecution&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sevenrmartsupermarket.listeners.ExtentReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;loginDetails&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sevenrmartsupermarket.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- loginDetails --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;SubCategoryFunctions&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sevenrmartsupermarket.tests.SubCategoryTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SubCategoryFunctions --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;HomeFunctionality&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sevenrmartsupermarket.tests.HomeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomeFunctionality --&gt;
+&lt;/suite&gt; &lt;!-- ParallelExecution --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ParallelExecution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">loginDetails (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SubCategoryFunctions (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">HomeFunctionality (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ParallelExecution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ParallelExecution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ParallelExecution');
+function tableData_ParallelExecution() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyNewSubCategory')
+data.setCell(0, 2, 'com.sevenrmartsupermarket.tests.SubCategoryTest')
+data.setCell(0, 3, 24728);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLogin')
+data.setCell(1, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(1, 3, 21460);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAllSubCategorynames')
+data.setCell(2, 2, 'com.sevenrmartsupermarket.tests.SubCategoryTest')
+data.setCell(2, 3, 2540);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySubCategoryHeader')
+data.setCell(3, 2, 'com.sevenrmartsupermarket.tests.SubCategoryTest')
+data.setCell(3, 3, 2300);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginDataProvider')
+data.setCell(4, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(4, 3, 1868);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginDataProvider')
+data.setCell(5, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(5, 3, 1515);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyNewCategoryAddition')
+data.setCell(6, 2, 'com.sevenrmartsupermarket.tests.SubCategoryTest')
+data.setCell(6, 3, 1464);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyColorManageGift')
+data.setCell(7, 2, 'com.sevenrmartsupermarket.tests.HomeTest')
+data.setCell(7, 3, 1274);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginDataProvider')
+data.setCell(8, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(8, 3, 1272);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyProfilePicture')
+data.setCell(9, 2, 'com.sevenrmartsupermarket.tests.HomeTest')
+data.setCell(9, 3, 1271);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginDataProvider')
+data.setCell(10, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(10, 3, 871);
+window.suiteTableData['ParallelExecution']= { tableData: data, tableDiv: 'times-div-ParallelExecution'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ParallelExecution">
+              </div> <!-- times-div-ParallelExecution -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ParallelExecution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ParallelExecution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLogin</span>
+                <span class="method-start">6070 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAllSubCategorynames</span>
+                <span class="method-start">6269 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.HomeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyColorManageGift</span>
+                <span class="method-start">6583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyColorManageGift status=SUCCESS method=HomeTest.verifyColorManageGift()[pri:0,...)</span>
+                <span class="method-start">7863 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">7869 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyAllSubCategorynames status=SUCCESS method=SubCategoryTest.verifyAllSubCategor...)</span>
+                <span class="method-start">8809 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">8813 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.HomeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyProfilePicture</span>
+                <span class="method-start">11058 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNewCategoryAddition</span>
+                <span class="method-start">12250 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyProfilePicture status=SUCCESS method=HomeTest.verifyProfilePicture()[pri:0, i...)</span>
+                <span class="method-start">12334 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyNewCategoryAddition status=SUCCESS method=SubCategoryTest.verifyNewCategoryAd...)</span>
+                <span class="method-start">13717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">13718 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewSubCategory</span>
+                <span class="method-start">16138 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyLogin status=FAILURE method=LoginTest.verifyLogin()[pri:0, instance:com.seven...)</span>
+                <span class="method-start">27537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">29004 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyNewSubCategory status=FAILURE method=SubCategoryTest.verifyNewSubCategory()[p...)</span>
+                <span class="method-start">40866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">41109 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginDataProvider(admin, admin)</span>
+                <span class="method-start">42252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">44125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(jav...)</span>
+                <span class="method-start">44125 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.SubCategoryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySubCategoryHeader</span>
+                <span class="method-start">46253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifySubCategoryHeader status=SUCCESS method=SubCategoryTest.verifySubCategoryHead...)</span>
+                <span class="method-start">48556 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginDataProvider(Athira, athiravj)</span>
+                <span class="method-start">52202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(jav...)</span>
+                <span class="method-start">53480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">53480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginDataProvider(Abhiram, Abhiram@11)</span>
+                <span class="method-start">57702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(jav...)</span>
+                <span class="method-start">58575 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">58577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginDataProvider(TESTNG12, abcd)</span>
+                <span class="method-start">62957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailurescreenShot([TestResult name=verifyLoginDataProvider status=SUCCESS method=LoginTest.verifyLoginDataProvider(jav...)</span>
+                <span class="method-start">64472 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
