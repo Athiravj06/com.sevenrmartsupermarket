@@ -1,6 +1,8 @@
 package com.sevenrmartsupermarket.utilities;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -36,5 +38,9 @@ public class GeneralUtility {
 		 Faker faker = new Faker();
 		 return faker.name().firstName();
 	 }
+	 
+	 public static String getTimeStamp() {
+			return new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
+		}
 
 }

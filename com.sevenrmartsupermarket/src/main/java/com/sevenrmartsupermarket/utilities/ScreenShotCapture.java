@@ -23,7 +23,8 @@ public class ScreenShotCapture {
 			//captures screenshot
 			File screenShot = takeScreenshot.getScreenshotAs(OutputType.FILE);
 			//to get system date and time
-			String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
+			//String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
+			String timeStamp = GeneralUtility.getTimeStamp();
 			String path=Constants.SCREENSHOT_FILE_PATH_STRING+imageName+"_"+timeStamp+".png";
 			//to store the screenshot
 			File destination = new File(path);

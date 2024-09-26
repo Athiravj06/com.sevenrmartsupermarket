@@ -12,15 +12,15 @@ public class HomePage {
 	GeneralUtility utility=new GeneralUtility();
 	
 	@FindBy(xpath = "//a[@class='d-block']")
-	WebElement profileName;
+	private WebElement profileName;
 	@FindBy(xpath = "//div[@class='inner']//p[(text()='Sub Category')]//following::a[1]")
-	WebElement subCategory;
+	private WebElement subCategory;
 	@FindBy(xpath = "//img[@src='https://groceryapp.uniqassosiates.com/public/assets/admin/dist/img/user2-160x160.jpg']")
-	WebElement profilePicture;
+	private WebElement profilePicture;
 	@FindBy(xpath = "//div[@class='inner']//p[(text()='Sub Category')]//following::a[3]")
-	WebElement manageGiftCards;
+	private WebElement manageGiftCards;
 	@FindBy(xpath = "//div[@class='inner']//p[(text()='Admin Users')]//following::a[1]")
-	WebElement adminUser;
+	private WebElement adminUser;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;

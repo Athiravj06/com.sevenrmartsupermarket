@@ -16,13 +16,14 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.sevenrmartsupermarket.constants.Constants;
+import com.sevenrmartsupermarket.utilities.GeneralUtility;
 
 public class ExtentReport implements IReporter {
 	
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-	extent = new ExtentReports(Constants.EXTENT_REPORT_PATH + File.separator + "Extent.html", true);
+		extent = new ExtentReports(Constants.EXTENT_REPORT_PATH + File.separator + "Extent_"+GeneralUtility.getTimeStamp()+".html", true);
 
 	for (ISuite suite : suites) {
 	Map<String, ISuiteResult> result = suite.getResults();

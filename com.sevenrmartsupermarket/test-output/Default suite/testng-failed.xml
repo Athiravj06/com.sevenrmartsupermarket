@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sevenrmartsupermarket.tests.SubCategoryTest">
+      <class name="com.sevenrmartsupermarket.tests.LoginTest">
         <methods>
           <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
           <include name="FailurescreenShot"/>
-          <include name="verifyNewSubCategory"/>
+          <include name="verifyLogin"/>
         </methods>
-      </class> <!-- com.sevenrmartsupermarket.tests.SubCategoryTest -->
+      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

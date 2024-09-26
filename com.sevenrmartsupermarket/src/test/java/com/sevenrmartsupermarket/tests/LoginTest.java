@@ -14,7 +14,7 @@ public class LoginTest extends Base {
 	HomePage homePage;
 	ExcelReader excelReader = new ExcelReader();
 
-	@Test
+	@Test(groups = "Smoke")
 	public void verifyLogin() {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.model.ScreenCapture;
 import com.sevenrmartsupermarket.base.Base;
+import com.sevenrmartsupermarket.listeners.RetryAnalyzer;
 import com.sevenrmartsupermarket.pages.HomePage;
 import com.sevenrmartsupermarket.pages.LoginPage;
 import com.sevenrmartsupermarket.pages.SubCategoryPage;
@@ -30,7 +31,7 @@ public class SubCategoryTest extends Base {
 		Assert.assertEquals(actualHeader, expectedHeader);
 	}
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void verifyAllSubCategorynames() {
 		
 		loginPage = new LoginPage(driver);

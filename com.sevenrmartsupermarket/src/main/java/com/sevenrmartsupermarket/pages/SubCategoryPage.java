@@ -15,31 +15,33 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sevenrmartsupermarket.utilities.GeneralUtility;
 import com.sevenrmartsupermarket.utilities.PageUtility;
+import com.sevenrmartsupermarket.utilities.WaitUtility;
 
 public class SubCategoryPage {
 	
 	WebDriver driver;
 	GeneralUtility utility=new GeneralUtility();
 	PageUtility pageUtility;
+	WaitUtility waitUtility;
 	
 	@FindBy(xpath="//h1[text()='List Sub Categories']")
-	WebElement subcategoryheader;
+	private WebElement subcategoryheader;
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")
-	List<WebElement> subCategoryNames;
+	private List<WebElement> subCategoryNames;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
-	WebElement newSubCategory;
+	private WebElement newSubCategory;
 	@FindBy(xpath = "//select[@class='form-control selectpicker']")
-	WebElement selectCategoryElement;
+	private WebElement selectCategoryElement;
 	@FindBy(xpath = "//input[@id='subcategory']")
-	WebElement enterSubCategoryElement;
+	private WebElement enterSubCategoryElement;
 	@FindBy(xpath = "//input[@id='main_img']")
-	WebElement uploadImage;
+	private WebElement uploadImage;
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement saveButton;
+	private WebElement saveButton;
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1][contains(text(),'iphone')]")
-	WebElement newCategoryAdded;
+	private WebElement newCategoryAdded;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement successMessage;
+	private WebElement successMessage;
 
 	public SubCategoryPage(WebDriver driver) {
 		
@@ -72,13 +74,20 @@ public class SubCategoryPage {
 	public void enterSubcategory(String subcategory) {
 		enterSubCategoryElement.sendKeys(subcategory);
 	}
+	
+	public void enterCategory(String category) {
+		pageUtility.selectByVisibleText(selectCategoryElement, category);
+	}
+	
 	public void imageUpload() {
 		pageUtility.imageUpload(uploadImage);	
 		
 	}
-	public void clickOnSave() {
-		
+	public SubCategoryPage clickOnSave() {
+		waitUtility= new WaitUtility(driver);
+	    waitUtility.waitforElementtobeClickable(saveButton);
 		pageUtility.scrollAndClick(saveButton);
+		return this;
 	}
 	
 	

@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.sevenrmartsupermarket.constants.Constants;
 import com.sevenrmartsupermarket.utilities.ScreenShotCapture;
@@ -51,18 +52,24 @@ public class Base {
 
 	}
 
-	@BeforeMethod
-	public void launchBrowser() {
-
-		// to read/retrieve data from config.properties
-		// inside getproperty we are giving key of config.properties file
-		String browser = properties.getProperty("browser");
-		String url = properties.getProperty("url");
-		initialize(browser, url);
-
+	/**For cross browser execution**/
+	@Parameters("browser")
+	@BeforeMethod(enabled = false)
+	public void launchBrowser(String browser) {
+	String url = properties.getProperty("url");
+	initialize(browser, url);
 	}
 	
-	@AfterMethod
+	/**Individual Test case Execution**/
+	@BeforeMethod(enabled= true,alwaysRun = true)
+	public void launchBrowser() {
+	String browser = properties.getProperty("browser");
+	String url = properties.getProperty("url");
+	initialize(browser, url);
+	}
+	
+	
+	@AfterMethod(alwaysRun = true)
 	public void FailurescreenShot(ITestResult itestresult) {
 		
 		if(itestresult.getStatus()==ITestResult.FAILURE) {

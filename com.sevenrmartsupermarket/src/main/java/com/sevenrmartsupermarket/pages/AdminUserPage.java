@@ -16,7 +16,7 @@ public class AdminUserPage {
 	GeneralUtility utility=new GeneralUtility();
 	
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[1]//td")
-	List<WebElement> userDetails;
+	private List<WebElement> userDetails;
 
 	public AdminUserPage(WebDriver driver) {
 		this.driver = driver;

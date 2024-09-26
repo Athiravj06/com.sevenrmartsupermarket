@@ -18,19 +18,19 @@ public class LoginPage {
 	GeneralUtility utility=new GeneralUtility();
 
 	@FindBy(xpath = "//input[@type='text']")
-	WebElement userNameField;
+	private WebElement userNameField;
 	@FindBy(xpath = "//input[@type='password']")
-	WebElement passwordField;
+	private WebElement passwordField;
 	@FindBy(xpath = "//button[@class='btn btn-dark btn-block']")
-	WebElement signInButton;
+	private WebElement signInButton;
 	@FindBy(xpath = "//label[contains(text(),'Remember Me')]")
-	WebElement rememberMe;
+	private WebElement rememberMe;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		try {
-			// to load the config.properties file
+			/** to load the config.properties file**/
 			FileInputStream inputStream = new FileInputStream(Constants.CONFIG_FILE_PATH);
 			properties.load(inputStream);
 
