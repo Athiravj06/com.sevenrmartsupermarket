@@ -3,6 +3,27 @@
 	<groupId>com.sevenrmartsupermarket</groupId>
 	<artifactId>com.sevenrmartsupermarket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.5.0</version>
+					<configuration>
+						<suiteXmlFiles>
+                            <file>src/main/resources/xmlsuite/groups.xml</file>
+							<file>src/main/resources/xmlsuite/parallel.xml</file>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
