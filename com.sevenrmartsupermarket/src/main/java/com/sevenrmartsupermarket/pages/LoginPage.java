@@ -70,8 +70,7 @@ public class LoginPage {
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSiginButton();
-		return new HomePage(driver);
-		
+		return new HomePage(driver);	
 	}
 	
 	
