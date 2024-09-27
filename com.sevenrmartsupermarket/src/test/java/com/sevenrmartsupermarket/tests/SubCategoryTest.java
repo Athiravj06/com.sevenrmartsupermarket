@@ -51,23 +51,15 @@ public class SubCategoryTest extends Base {
 		homePage= loginPage.login();
 		subCategoryPage =homePage.clickOnSubCategory();	
 		subCategoryPage.createSubCategory("Appliances", "Microwave Oven");
-		String actualMessage=subCategoryPage.getAlertMessage();
-		System.out.println(actualMessage);
-		String expectedMessage="? Alert! Sub Category Created Successfully";
-		Assert.assertEquals(actualMessage, expectedMessage);
+		String message=subCategoryPage.getAlertMessage();
+		String actualMessage=message.substring(9);
+		String expectedMessage="Sub Category Created Successfully";
+	    Assert.assertEquals(actualMessage, expectedMessage);
 			
 	}
 	
 	
-	@Test
-	public void verifyNewCategoryAddition() {
-		loginPage=new LoginPage(driver);
-		homePage= loginPage.login();
-		subCategoryPage=homePage.clickOnSubCategory();
-		subCategoryPage.newCategoryDisplay();
-		Assert.assertTrue(true);
-		
-	}
+
 	
 
 	

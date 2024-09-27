@@ -38,10 +38,10 @@ public class SubCategoryPage {
 	private WebElement uploadImage;
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement saveButton;
-	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1][contains(text(),'iphone')]")
-	private WebElement newCategoryAdded;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement successMessage;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
+	private WebElement searchElement;
 
 	public SubCategoryPage(WebDriver driver) {
 		
@@ -104,8 +104,11 @@ public class SubCategoryPage {
 		return successMessage.getText();
 	}
 	
-	public boolean newCategoryDisplay() {
-		return newCategoryAdded.isDisplayed();
+	public SubCategoryPage clickOnSearch() {
+		searchElement.click();
+		return this;
 	}
+	
+
 
 }
