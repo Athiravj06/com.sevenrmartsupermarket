@@ -47,5 +47,4 @@ public class HomePage {
 		adminUser.click();
 	}
 
-
 }
