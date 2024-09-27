@@ -40,7 +40,6 @@ public class SubCategoryTest extends Base {
 		loginPage.login();
 		homePage.clickOnSubCategory();
 		subCategoryPage.getAllSubCategoryName();
-
 		
 	}
 	

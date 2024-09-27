@@ -30,10 +30,10 @@ public class LoginTest extends Base {
 		String actualProfileName = homePage.getProfileName();
 		System.out.println(actualProfileName);
 		String expectedProfileName = "Admin";
-		Assert.assertEquals(actualProfileName, expectedProfileName);
-
 		String name = GeneralUtility.getRandomFirstName();
 		System.out.println(name);
+		Assert.assertEquals(actualProfileName, expectedProfileName);
+
 
 	}
 	@Test(dataProvider = "loginDetails",dataProviderClass = DataProviders.class)
