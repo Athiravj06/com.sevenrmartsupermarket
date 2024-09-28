@@ -39,6 +39,11 @@ public class GeneralUtility {
 		 return faker.name().firstName();
 	 }
 	 
+	 public static String getRandomCategory() {
+		 Faker faker = new Faker();
+		 return faker.name().title();
+	 }
+	 
 	 public static String getTimeStamp() {
 			return new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
 		}

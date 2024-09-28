@@ -75,8 +75,8 @@ public class PageUtility {
 
 	}
 
-	public void imageUpload(WebElement element) {
-		File file = new File(Constants.IMAGE_FILE_PATH);
+	public void imageUpload(WebElement element, String imageName) {
+		File file = new File(Constants.IMAGE_FILE_PATH+imageName);
 		element.sendKeys(file.getAbsolutePath());
 	}
 	

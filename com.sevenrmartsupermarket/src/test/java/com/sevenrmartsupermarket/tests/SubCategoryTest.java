@@ -9,6 +9,7 @@ import com.sevenrmartsupermarket.listeners.RetryAnalyzer;
 import com.sevenrmartsupermarket.pages.HomePage;
 import com.sevenrmartsupermarket.pages.LoginPage;
 import com.sevenrmartsupermarket.pages.SubCategoryPage;
+import com.sevenrmartsupermarket.utilities.GeneralUtility;
 import com.sevenrmartsupermarket.utilities.ScreenShotCapture;
 
 public class SubCategoryTest extends Base {
@@ -23,7 +24,6 @@ public class SubCategoryTest extends Base {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		subCategoryPage = new SubCategoryPage(driver);	
-		
 		loginPage.login();
 		homePage.clickOnSubCategory();
 		String actualHeader=subCategoryPage.subCategoryPageHeader();
@@ -49,7 +49,8 @@ public class SubCategoryTest extends Base {
 		loginPage = new LoginPage(driver);	
 		homePage= loginPage.login();
 		subCategoryPage =homePage.clickOnSubCategory();	
-		subCategoryPage.createSubCategory("Appliances", "Microwave Oven");
+		String subCategoryRandom=GeneralUtility.getRandomCategory();
+		subCategoryPage.createSubCategory("Appliances", subCategoryRandom);
 		String message=subCategoryPage.getAlertMessage();
 		String actualMessage=message.substring(9);
 		String expectedMessage="Sub Category Created Successfully";
@@ -57,6 +58,19 @@ public class SubCategoryTest extends Base {
 			
 	}
 	
+	@Test(retryAnalyzer = RetryAnalyzer.class)
+	public void verifySearchCategory() {
+		loginPage=new LoginPage(driver);
+		homePage=loginPage.login();
+		subCategoryPage=homePage.clickOnSubCategory().clickOnSearch()
+				.enterCategory("Appliances").searchBySubCategory("Microwave Oven")
+				.clickOnSearchIcon();
+		Assert.assertTrue(subCategoryPage.searchDisplay());
+		
+		
+				
+	}
+
 	
 
 	

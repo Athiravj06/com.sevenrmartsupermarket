@@ -1,6 +1,7 @@
 package com.sevenrmartsupermarket.pages;
 
 import java.io.File;
+import java.nio.file.AtomicMoveNotSupportedException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,15 @@ public class SubCategoryPage {
 	private WebElement successMessage;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
 	private WebElement searchElement;
+	@FindBy(xpath = "//input[@class='form-control']")
+	private WebElement searchSubCategory;
+	@FindBy(xpath = "//button[@class='btn btn-danger btn-fix']")
+	private WebElement searchButton;
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")
+	private WebElement searchDisplayElement;
+	@FindBy(xpath = "(//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td//a//i[@class='fas fa-edit'])[1]")
+	private WebElement editElement;
+
 
 	public SubCategoryPage(WebDriver driver) {
 		
@@ -60,8 +70,7 @@ public class SubCategoryPage {
 		List<String> names =new ArrayList<String>();
 		names=utility.get_textofelements(subCategoryNames);
 		System.out.println(names);
-		
-		
+				
 	}
 	
 	
@@ -75,12 +84,14 @@ public class SubCategoryPage {
 		enterSubCategoryElement.sendKeys(subcategory);
 	}
 	
-	public void enterCategory(String category) {
+	public SubCategoryPage enterCategory(String category) {
 		pageUtility.selectByVisibleText(selectCategoryElement, category);
+		return this;
 	}
 	
 	public void imageUpload() {
-		pageUtility.imageUpload(uploadImage);	
+		
+		pageUtility.imageUpload(uploadImage, "oven.jpg");	
 		
 	}
 	public SubCategoryPage clickOnSave() {
@@ -108,7 +119,20 @@ public class SubCategoryPage {
 		searchElement.click();
 		return this;
 	}
-	
+	public SubCategoryPage searchBySubCategory(String subCategory) {
+		searchSubCategory.sendKeys(subCategory);
+		return this;
+		
+	}
+	public SubCategoryPage clickOnSearchIcon() {
+		waitUtility= new WaitUtility(driver);
+	    waitUtility.waitforElementtobeClickable(searchButton);
+		pageUtility.scrollAndClick(searchButton);
+		return this;
+	}
+	public boolean searchDisplay() {
+		return searchDisplayElement.isDisplayed();
+	}
 
 
 }
