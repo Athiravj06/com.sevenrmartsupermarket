@@ -1,5 +1,7 @@
 package com.sevenrmartsupermarket.tests;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.sevenrmartsupermarket.base.Base;
@@ -37,11 +39,23 @@ public class LoginTest extends Base {
 
 	}
 	@Test(dataProvider = "loginDetails",dataProviderClass = DataProviders.class)
-	public void verifyLoginDataProvider(String userName, String password) {
+	public void verifyLoginDataProvider(String userName, String password, String expectedprofileName) {
 		
 		loginPage=new LoginPage(driver);
+		homePage=new HomePage(driver);
 		loginPage.login(userName, password);
+		String actualProfileName=homePage.getProfileName();
+		System.out.println(actualProfileName);
+		Assert.assertEquals(actualProfileName, expectedprofileName);		
 		
 	}
-
+	
+	@Test
+	public void verifyRememberMe() {
+		loginPage = new LoginPage(driver);
+		loginPage.enterUserName("admin");
+		loginPage.enterPassword("admin");
+		assertTrue(loginPage.rememberMeBox());
+			
+	}
 }

@@ -21,11 +21,11 @@ public class Base {
 	Properties properties = new Properties();
 	ScreenShotCapture screenShotCapture= new ScreenShotCapture();
 
-	// constructor without parameter
+	
 	public Base() {
-		// to print exception
+		
 		try {
-			// to load the config.properties file
+			
 			FileInputStream inputStream = new FileInputStream(Constants.CONFIG_FILE_PATH);
 			properties.load(inputStream);
 

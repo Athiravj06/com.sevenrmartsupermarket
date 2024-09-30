@@ -1,5 +1,6 @@
 package com.sevenrmartsupermarket.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sevenrmartsupermarket.base.Base;
@@ -21,6 +22,9 @@ public class AdminUserTest extends Base {
 		loginPage.login();
 		homePage.clickOnAdminUser();
 		adminUserPage.userDetails();
+		String actualOutput=adminUserPage.getTextHeading();
+		String expectedOutput="Admin Users";
+		Assert.assertEquals(actualOutput, expectedOutput);
 		
 	}
 

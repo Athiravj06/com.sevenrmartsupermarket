@@ -31,18 +31,6 @@ public class SubCategoryTest extends Base {
 		Assert.assertEquals(actualHeader, expectedHeader);
 	}
 	
-	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void verifyAllSubCategorynames() {
-		
-		loginPage = new LoginPage(driver);
-		homePage = new HomePage(driver);
-		subCategoryPage = new SubCategoryPage(driver);	
-		loginPage.login();
-		homePage.clickOnSubCategory();
-		subCategoryPage.getAllSubCategoryName();
-		
-	}
-	
 	@Test
 	public void verifyNewSubCategory() {
 		
@@ -66,10 +54,27 @@ public class SubCategoryTest extends Base {
 				.enterCategory("Appliances").searchBySubCategory("Microwave Oven")
 				.clickOnSearchIcon();
 		Assert.assertTrue(subCategoryPage.searchDisplay());
-		
-		
+				
 				
 	}
+	
+	@Test
+	public void verifyEditCategory() {
+		loginPage=new LoginPage(driver);
+		homePage=loginPage.login();
+		String subCategoryRandom=GeneralUtility.getRandomCategory();
+		subCategoryPage=homePage.clickOnSubCategory().clickOnEdit().enterCategory("Grocery")
+				.editSubcategory(subCategoryRandom).clickOnEdit();
+		String message=subCategoryPage.getAlertMessage();
+		String actualMessage=message.substring(9);
+		String expectedMessage="Sub Category Updated Successfully";
+	    Assert.assertEquals(actualMessage, expectedMessage);
+		
+				
+				
+	}
+	
+	
 
 	
 

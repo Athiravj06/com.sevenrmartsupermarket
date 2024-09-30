@@ -10,7 +10,7 @@ public class DataProviders {
 	public Object[][] login()
 	{
 		excelReader.setExcelFile("loginData", "Admin_users_login");
-		return excelReader.getMultidimentionalData(4, 2);
+		return excelReader.getMultidimentionalData(4, 3);
 	}
 
 }

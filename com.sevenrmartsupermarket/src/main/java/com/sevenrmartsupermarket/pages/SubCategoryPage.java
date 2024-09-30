@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +52,8 @@ public class SubCategoryPage {
 	private WebElement searchDisplayElement;
 	@FindBy(xpath = "(//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td//a//i[@class='fas fa-edit'])[1]")
 	private WebElement editElement;
+	@FindBy(xpath = "//button[@class='btn btn-danger']")
+	private WebElement updateButton;
 
 
 	public SubCategoryPage(WebDriver driver) {
@@ -64,15 +67,7 @@ public class SubCategoryPage {
 		return subcategoryheader.getText();
 		
 	}
-	
-	public void getAllSubCategoryName() {
-		
-		List<String> names =new ArrayList<String>();
-		names=utility.get_textofelements(subCategoryNames);
-		System.out.println(names);
-				
-	}
-	
+
 	
 	public void clickOnNew() {
 		
@@ -80,8 +75,9 @@ public class SubCategoryPage {
 		
 	}
 
-	public void enterSubcategory(String subcategory) {
+	public SubCategoryPage enterSubcategory(String subcategory) {
 		enterSubCategoryElement.sendKeys(subcategory);
+		return this;
 	}
 	
 	public SubCategoryPage enterCategory(String category) {
@@ -132,6 +128,23 @@ public class SubCategoryPage {
 	}
 	public boolean searchDisplay() {
 		return searchDisplayElement.isDisplayed();
+	}
+	public SubCategoryPage clickOnEdit() {
+		editElement.click();
+		return this;
+	}
+	public SubCategoryPage editSubcategory(String subCategory) {
+		enterSubCategoryElement.sendKeys(Keys.chord(Keys.CONTROL,"a"));
+		enterSubCategoryElement.sendKeys(Keys.BACK_SPACE);
+		enterSubCategoryElement.sendKeys(subCategory);
+		return this;
+	}
+	public SubCategoryPage clickOnUpdate() {
+		waitUtility= new WaitUtility(driver);
+		waitUtility.waitforElementtobeClickable(updateButton);
+		pageUtility.scrollAndClick(updateButton);
+		return this;
+		
 	}
 
 

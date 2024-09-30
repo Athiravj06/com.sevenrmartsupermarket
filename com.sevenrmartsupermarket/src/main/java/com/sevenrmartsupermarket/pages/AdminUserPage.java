@@ -17,6 +17,8 @@ public class AdminUserPage {
 	
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[1]//td")
 	private List<WebElement> userDetails;
+	@FindBy(xpath = "//h1[@class='m-0 text-dark']")
+	private WebElement pageHeadingElement;
 
 	public AdminUserPage(WebDriver driver) {
 		this.driver = driver;
@@ -27,6 +29,10 @@ public class AdminUserPage {
 		List<String>details=new ArrayList<String>();
 		details=utility.get_textofelements(userDetails);
 		System.out.println(details);
+		
+	}
+	public String getTextHeading() {
+		return pageHeadingElement.getText();
 		
 	}
 	

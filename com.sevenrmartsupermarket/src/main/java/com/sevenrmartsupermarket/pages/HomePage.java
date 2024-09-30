@@ -42,6 +42,7 @@ public class HomePage {
 	public String getImageAdmin() {
 		return utility.getAttribute(profilePicture, "src");
 	}
+
 	
 	public void clickOnAdminUser() {
 		adminUser.click();

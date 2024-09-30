@@ -19,7 +19,9 @@ public class HomeTest extends Base {
 		loginPage=new LoginPage(driver);
 		homePage=new HomePage(driver);
 		loginPage.login();
-		System.out.println(homePage.getImageAdmin());
+		String actualOutput= homePage.getImageAdmin();
+		String expectedOutput="https://groceryapp.uniqassosiates.com/public/assets/admin/dist/img/user2-160x160.jpg";
+		Assert.assertEquals(actualOutput, expectedOutput);
 		
 		
 	}
