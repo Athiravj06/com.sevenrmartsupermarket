@@ -1,0 +1,138 @@
+User Story ID,Test Scenario,Test Case ID,Description,Pre-Condition,Steps to follow,Test Data,Expected Result,Actual Result,Status,Automation Status,Priority ,Remarks 
+,Verify whether the user is able to navigate to the package section in the dashboard and can verify the functionalities associated with it.,TC -08,Validate whether the user is able to click on the package section and view the detailed page of package section.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. From the dashboard click on the package section on the left side of the page.
+2. Check whether the user is able to view the detail page of the package section.
+3. Check whether the price is shown in the format specified in the design document.
+4. Validate the detail page of the package by comparing with the design document whether all the components are seen as per the design shared.","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. User should be able to navigate successfully to the package section upon clicking on it.
+2. Detail page should be displayed successfully on the right side of the page.
+3. Price should be displayed in specified format.
+3. The web page should be seen as per the design shared.(all the components-font size, font style, punctuation, grammatical errors)",,To Do /New,Yes,p1,
+,,TC -09,Check whether the user is able to create a new package using create package button.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. From  the package page click the Create package button.
+2. Check whether the user is able to view the create package page with all the components specified in the design shared.
+3. Enter title on the title field.
+4. Enter category from dropdown and search field.
+5. Enter taxation amount.
+6. Check whether description is optional or not.
+7. Enter duration in minutes.
+8. Enter number of classes
+9. Enter price.
+10.Enter package type from dropdown
+11.Click Save.
+12.Verify  after saving, the tab navigate to view section.
+13. Check whether the new package is present on the detail page with price.","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. Redirected to create package page.
+2. All components are present.
+3. Title entered. Error message should be displayed if left blank.
+4. Category selected. Error message should be displayed if not selected.
+5. Taxation amount entered. Error message should be displayed if left blank.
+6. Description field is optional. No error message if left blank.
+7. Duration entered. Error message should be displayed if left blank.
+8. Number of classes entered. Error message should be displayed if left blank. 
+9. Price entered. Error message should be displayed if left blank.
+10.Package type selected. Error message should be displayed if left blank.
+11.Package is saved. If any field is missed to enter, display corresponding error message.
+12.Redirected to view section.
+13.New package is listed with correct price.
+",,To Do/New,Yes,p1,
+,,TC -10,Check whether the user is able to use view button on right side of title in package page.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. From package page, click on view button  on right side of the list of titles.
+2. Verify it navigate to view page.
+3. Check whether Category, Title, Taxt Amount, Description, Price details are there
+4. Check update and delete button are there and they should navigate to respective pages .
+","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. User is redirected to the view page for the selected package.
+2. Successful navigation to the view page.
+3. The view page displays the Category, Title, Taxation Amount, Description, and Price details of the package.
+4. Clicking the update button navigates to the update category page and delete button should a confirmation box.",,To Do/New,Yes,p2,
+,,TC -11,Check whether the user is able to use update button on right side of  names in Categories page.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. From package page, click on  update button  on right side of the list of names.
+2.Verify it navigate to updatae page
+3. Update the required fields .
+4. Click save.
+5. Verify  after saving, the tab navigate to view section and check updated category is there or not.
+6. Check whether the updated package is present on the detail page with price.
+7. Click save button ,after updating with blank space and verify whether error message is displayed or not.
+","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. User is redirected to the update category page with current category details.
+2. Successful navigation to the update page.
+3. Required fields  are  updated with new ones.
+4. Updated  details are saved.
+5. User is redirected to the view section .
+6. Updated package is listed with price.
+6. Updated category is not saved with a blank fields and an error message is displayed 
+",,,,,
+,,TC -12,Check whether the user is able to use delete button on right side of  names in package page.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. From package page, click on delete button  on right side of the list of titles.
+2.Click on ok .
+3. Check the name get deleted on not.
+4. Click delete button again on another title.
+5. Click cancel.
+6. Check whether the delete operation is cancelled or not","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. A delete confirmation box for deletion is appeared.
+2. The selected package should be deleted.
+3. The deleted package should not appear in the categories list.
+4. Confirmation box for deletion.
+5. Delete operation should be canceled.
+6. Selected package should still be visible in the categories list.
+
+
+",,,,p2,#NAME?
+,,TC -13,Validate the pagination functionality on categories page.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. Navigate to the categories page.
+2. Verify that the first page displays the correct number of package as shown in the message.
+3. Click on the next button symbol to navigate to the second page.
+4. Verify that the second page displays the correct number of categories.
+5. Click on the previous button to navigate back to the first page.
+6. Verify that the first page displays the same package as initially shown.
+7. Click on a specific page number to navigate directly to that page.
+8. Verify that the correct number of package is displayed on the selected page.
+","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. The package page loads successfully.
+2. The first page shows the correct number of package.
+3. The second page loads successfully.
+4. The second page shows the correct number of package.
+5. The first page loads successfully.
+6. The first page shows the same package as initially displayed.
+7. The selected page loads successfully.
+8. The selected page shows the correct number of package.
+
+",,To Do /New,Yes,p1,
+,,TC -14,Validate the breadcrumb functionality on categories page.," 1. User should be logged into My Chosen application successfully.
+2. Atleast one category should be entered in categories section","
+1. Verify that the breadcrumb : Home /Package.
+2. Click on home .
+3. Verify whether it navigates to home page.
+
+","url - mychosen.webappstore.in
+Username -admin
+Password - 1q2w3e4r
+browser - Google Chrome
+product name - I phone 14 Pro","1. The breadcrumb displays Home /Package.
+2. The Home link in the breadcrumb is working.
+3. Clicking Home navigates to the home page successfully.",,To Do /New,Yes,p2,

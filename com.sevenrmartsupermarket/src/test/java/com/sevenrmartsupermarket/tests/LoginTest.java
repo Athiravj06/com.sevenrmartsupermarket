@@ -20,18 +20,13 @@ public class LoginTest extends Base {
 	public void verifyLogin() {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		loginPage.login("admin", "admin");
-
-		loginPage.login();
-		
-		loginPage.login("anoojk30", " admin");
 		excelReader.setExcelFile("loginData", "Login_Credentials");
 		loginPage.login(excelReader.getCellData(4, 0), excelReader.getCellData(4, 1));
 		String value = excelReader.getCellData(1, 1);
 		System.out.println(value);
 		String actualProfileName = homePage.getProfileName();
 		System.out.println(actualProfileName);
-		String expectedProfileName = "Admin";
+		String expectedProfileName = "Athira";
 		String name = GeneralUtility.getRandomFirstName();
 		System.out.println(name);
 		Assert.assertEquals(actualProfileName, expectedProfileName);

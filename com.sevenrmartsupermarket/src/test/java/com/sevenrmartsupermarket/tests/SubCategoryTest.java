@@ -64,7 +64,7 @@ public class SubCategoryTest extends Base {
 		homePage=loginPage.login();
 		String subCategoryRandom=GeneralUtility.getRandomCategory();
 		subCategoryPage=homePage.clickOnSubCategory().clickOnEdit().enterCategory("Grocery")
-				.editSubcategory(subCategoryRandom).clickOnEdit();
+				.editSubcategory(subCategoryRandom).clickOnUpdate();
 		String message=subCategoryPage.getAlertMessage();
 		String actualMessage=message.substring(9);
 		String expectedMessage="Sub Category Updated Successfully";
