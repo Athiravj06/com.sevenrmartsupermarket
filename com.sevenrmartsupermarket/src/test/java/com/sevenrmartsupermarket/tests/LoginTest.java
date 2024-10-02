@@ -34,7 +34,7 @@ public class LoginTest extends Base {
 
 	}
 	@Test(dataProvider = "loginDetails",dataProviderClass = DataProviders.class)
-	public void verifyLoginDataProvider(String userName, String password, String expectedprofileName) {
+	public void verifyLoginData(String userName, String password, String expectedprofileName) {
 		
 		loginPage=new LoginPage(driver);
 		homePage=new HomePage(driver);

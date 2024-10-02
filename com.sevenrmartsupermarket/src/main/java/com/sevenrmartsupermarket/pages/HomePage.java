@@ -44,8 +44,9 @@ public class HomePage {
 	}
 
 	
-	public void clickOnAdminUser() {
+	public AdminUserPage clickOnAdminUser() {
 		adminUser.click();
+		return new AdminUserPage(driver);
 	}
 
 }

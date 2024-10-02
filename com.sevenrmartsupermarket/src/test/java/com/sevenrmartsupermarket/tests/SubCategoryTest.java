@@ -2,15 +2,12 @@ package com.sevenrmartsupermarket.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.model.ScreenCapture;
 import com.sevenrmartsupermarket.base.Base;
 import com.sevenrmartsupermarket.listeners.RetryAnalyzer;
 import com.sevenrmartsupermarket.pages.HomePage;
 import com.sevenrmartsupermarket.pages.LoginPage;
 import com.sevenrmartsupermarket.pages.SubCategoryPage;
 import com.sevenrmartsupermarket.utilities.GeneralUtility;
-import com.sevenrmartsupermarket.utilities.ScreenShotCapture;
 
 public class SubCategoryTest extends Base {
 	
@@ -31,7 +28,7 @@ public class SubCategoryTest extends Base {
 		Assert.assertEquals(actualHeader, expectedHeader);
 	}
 	
-	@Test
+	@Test(groups = {"smoke","Regression"})
 	public void verifyNewSubCategory() {
 		
 		loginPage = new LoginPage(driver);	
@@ -71,7 +68,32 @@ public class SubCategoryTest extends Base {
 	    Assert.assertEquals(actualMessage, expectedMessage);
 		
 				
-				
+	   
+	}
+	
+	@Test
+	public void verifyDeleteCategory() {
+		loginPage=new LoginPage(driver);
+		homePage=loginPage.login();
+		subCategoryPage=homePage.clickOnSubCategory().clickOnDelete().deleteCategory();
+		String message=subCategoryPage.getAlertMessage();
+		String actualMessage=message.substring(9);
+		String expectedMessage="Sub Category Deleted Successfully";
+	    Assert.assertEquals(actualMessage, expectedMessage);
+		
+	}
+	
+	@Test
+	public void verifyCancelDelete() {
+		
+		loginPage=new LoginPage(driver);
+		homePage=loginPage.login();
+		subCategoryPage=homePage.clickOnSubCategory().clickOnDelete().cancelDeleteCategory();
+		String actualHeader=subCategoryPage.subCategoryPageHeader();
+		String expectedHeader="List Sub Categories";
+		Assert.assertEquals(actualHeader, expectedHeader);
+		
+		
 	}
 	
 	

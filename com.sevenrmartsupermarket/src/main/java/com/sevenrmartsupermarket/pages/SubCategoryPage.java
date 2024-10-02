@@ -1,20 +1,11 @@
 package com.sevenrmartsupermarket.pages;
 
-import java.io.File;
-import java.nio.file.AtomicMoveNotSupportedException;
-import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.sevenrmartsupermarket.utilities.GeneralUtility;
 import com.sevenrmartsupermarket.utilities.PageUtility;
 import com.sevenrmartsupermarket.utilities.WaitUtility;
@@ -54,6 +45,8 @@ public class SubCategoryPage {
 	private WebElement editElement;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	private WebElement updateButton;
+	@FindBy(xpath = "(//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td//a//i[@class='fas fa-trash-alt'])[1]")
+	private WebElement deleteButton;
 
 
 	public SubCategoryPage(WebDriver driver) {
@@ -146,6 +139,21 @@ public class SubCategoryPage {
 		return this;
 		
 	}
+	public SubCategoryPage clickOnDelete() {
+		deleteButton.click();
+		return this;
+	}
+	
+	public SubCategoryPage deleteCategory() {
+		
+	pageUtility.acceptAlert();
+	return this;
+	}
+	
+	public SubCategoryPage cancelDeleteCategory() {	
+		pageUtility.dismissAlert();
+		return this;
+		}
 
 
 }

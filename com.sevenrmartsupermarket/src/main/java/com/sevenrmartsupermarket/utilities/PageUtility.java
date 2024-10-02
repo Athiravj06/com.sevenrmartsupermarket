@@ -2,6 +2,7 @@ package com.sevenrmartsupermarket.utilities;
 
 import java.io.File;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -80,6 +81,14 @@ public class PageUtility {
 		element.sendKeys(file.getAbsolutePath());
 	}
 	
+	public void acceptAlert() {
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
 	
+	public void dismissAlert() {
+		Alert alert = driver.switchTo().alert();
+		alert.dismiss();
+	}
 
 }
