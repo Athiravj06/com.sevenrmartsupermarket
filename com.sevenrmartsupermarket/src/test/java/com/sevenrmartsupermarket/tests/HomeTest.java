@@ -23,7 +23,6 @@ public class HomeTest extends Base {
 		String expectedOutput="https://groceryapp.uniqassosiates.com/public/assets/admin/dist/img/user2-160x160.jpg";
 		Assert.assertEquals(actualOutput, expectedOutput);
 		
-		
 	}
 	
 	@Test
