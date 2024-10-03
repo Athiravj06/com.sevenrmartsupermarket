@@ -50,7 +50,7 @@ public class LoginTest extends Base {
 		loginPage = new LoginPage(driver);
 		loginPage.enterUserName("admin");
 		loginPage.enterPassword("admin");
-		assertTrue(loginPage.rememberMeBox());
+		Assert.assertTrue(loginPage.rememberMeBox());
 			
 	}
 }
